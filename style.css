@@ -1,0 +1,210 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff0f6 0%, #f0f4ff 100%);
+  color: #333;
+  line-height: 1.6;
+  transition: background 0.5s ease;
+}
+
+header {
+  background: linear-gradient(to right, #f6d8ff, #d0c7f6);
+  color: #4a004e;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 4px solid #e0bbff;
+}
+
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  background-color: #f0f4ff;
+  padding: 0.5rem 0;
+  margin: 0;
+  border-bottom: 2px solid #d0c7f6;
+}
+
+nav ul li {
+  margin: 0.5rem 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #7b3f61;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #ffe6fa;
+  transform: scale(1.05);
+  outline: none;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(173, 131, 207, 0.2);
+  position: relative;
+}
+
+#about::before {
+  content: "\1F4DA About Me";
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7b3f61;
+}
+
+#skills::before {
+  content: "\1F4BB Programming Languages";
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7b3f61;
+}
+
+#education::before {
+  content: "\1F393 Education";
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7b3f61;
+}
+
+#projects::before {
+  content: "\1F4A1 Projects";
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7b3f61;
+}
+
+#interests::before {
+  content: "\2764\FE0F Interests";
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7b3f61;
+}
+
+#contact::before {
+  content: "\1F4E9 Contact Me";
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7b3f61;
+}
+
+h2 {
+  color: #7b3f61;
+  border-bottom: 2px solid #ffb3e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.project {
+  background-color: #fef7ff;
+  border-left: 5px solid #e6b3ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+}
+.project-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-columns .column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.project-columns h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #7b3f61;
+}
+
+.project-columns .project {
+  background-color: #fef7ff;
+  border-left: 5px solid #e6b3ff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-columns .project:hover {
+  transform: translateY(-4px);
+}
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #e6b3ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+  background: linear-gradient(to right, #d0c7f6, #f6d8ff);
+  color: #4a004e;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header, main {
+    padding: 1rem;
+  }
+}
+
+/* Accessibility Enhancements */
+a:focus-visible {
+  outline: 2px dashed #b38ed3;
+  outline-offset: 4px;
+}
+
+button:focus-visible {
+  outline: 2px dashed #b38ed3;
+  outline-offset: 4px;
+}
